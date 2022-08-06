@@ -84,11 +84,9 @@
                     </div>
                 </div>
                 <div class="button-container">
-                    <div>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            перейти на сайт
-                        </a>
-                    </div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        перейти на сайт
+                    </a>
                 </div>
             </div>
 
@@ -114,11 +112,9 @@
                     </div>
                 </div>
                 <div class="button-container">
-                    <div>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            перейти на сайт
-                        </a>
-                    </div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        перейти на сайт
+                    </a>
                 </div>
             </div>
 
@@ -144,11 +140,9 @@
                     </div>
                 </div>
                 <div class="button-container">
-                    <div>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            перейти на сайт
-                        </a>
-                    </div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        перейти на сайт
+                    </a>
                 </div>
             </div>
 
@@ -174,11 +168,9 @@
                     </div>
                 </div>
                 <div class="button-container">
-                    <div>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            перейти на сайт
-                        </a>
-                    </div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        перейти на сайт
+                    </a>
                 </div>
             </div>
 
@@ -204,11 +196,9 @@
                     </div>
                 </div>
                 <div class="button-container">
-                    <div>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            перейти на сайт
-                        </a>
-                    </div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        перейти на сайт
+                    </a>
                 </div>
             </div>
         </section>
@@ -331,11 +321,9 @@
                         </h6>
                     </div>
                     <div class="comments-button-container">
-                        <div>
-                            <a href="http://" target="_blank" rel="noopener noreferrer">
-                                оставить комментарий
-                            </a>
-                        </div>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            оставить комментарий
+                        </a>
                     </div>
                 </div>
                 <div class="comments-container__content">
@@ -471,18 +459,113 @@
                     </div>
                 </div>
             </div>
-            <div class="left-comments-container">
 
+            <div class="left-comments-container">
+                <div class="left-comments__header">
+                    <h4 class="paragraph-headers">
+                        Оставить комментарий
+                    </h4>
+                </div>
+
+                <!-- onclick -->
+                <div class="left-comments__warning hide" id="warning-error">
+                    Это поле обязательно к заполнению!
+                </div>
+
+                <div class="left-comments__warning hide" id="warning-success">
+                    Ваш комментарий успешно добавлен!
+                </div>
+                
+
+                <form action="">
+                    <p class="second-headers">
+                        Оцените данный обзор
+                    </p>
+                    <div class="rating">
+                        <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+                        <label for="star5" >☆</label>
+                        <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+                        <label for="star4" >☆</label>
+                        <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+                        <label for="star3" >☆</label>
+                        <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+                        <label for="star2" >☆</label>
+                        <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+                        <label for="star1" >☆</label>
+                        <div class="clear"></div>
+                    </div>
+                    <label for="fname" class="second-headers">Напишите ваше имя:</label>
+                    <input type="text" id="fname" name="fname" required  />
+                    <label for="lcomment" class="second-headers">Напишите ваш комментарий:</label>
+                    <textarea id="fcomment" name="lname" required > </textarea>
+
+                    <button disabled>оставить комментарий</button>
+                </form>
             </div>
             <div class="policy-container">
-
+                <div class="policy__header">
+                    <h4 class="paragraph-headers">
+                        Отказ от обязательств
+                    </h4>
+                </div>
+                <div class="policy__paragraph">
+                    <p>
+                        Отказ от обязательств: топ обменников — бесплатный сервис. 
+                        Нас поддерживают читатели, а также мы получаем комиссии от 
+                        сайтов обменников, которых рекомендуем (когда вы переходите
+                         по нашим ссылкам и делаете покупку через наш сайт). Мы следим 
+                         за актуальностью и точностью всех материалов, хотя и не можем 
+                         её гарантировать в любой момент времени. Все цены основаны на 
+                         долларах США, информация о локальных валютах приведена для 
+                         справки и может варьироваться в зависимости от курса.
+                    </p>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer-container">
+        <div class="footer__header">
+            <h6>
+                ТОП ОБМЕННИКОВ
+            </h6>
+        </div>
+        <div class="footer-contents-container">
+            <div class="footer-content-container">
+                Здесь написана информация например: Топ обменников информационно — аналитический портал
+            </div>
+            <div class="footer-content-container">
+                <a href="#">
+                    Пользовательское соглашение
+                </a>
+                <a href="#">
+                    Политика конфиденциальности
+                </a>
+                <a href="#">
+                    Отказ от ответственности
+                </a>
+            </div>
+            <div class="footer-content-container">
+                <p>
+                    Email: pochta@mail.com
+                </p>
+                <p>
+                    Контакты
 
+                </p>
+            </div>
+        </div>
+        <div class="footer-policy">
+            <p>
+                Copyright © топобменников, 2022. Все права защищены. 
+                Все материалы данного сайта являются объектами авторского 
+                права. Запрещается копирование, распространение или любое 
+                иное использование информации и объектов без предварительного
+                 согласия правообладателя. Все статьи носят информационный 
+                 характер и не являются призывом к действию.
+            </p>
+        </div>
     </footer>
 </body>
 </html>
