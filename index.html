@@ -7,7 +7,7 @@
     <title>ТОП обменников</title>
 
     <!-- styles -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
 
     <!-- google fonts -->
     
@@ -24,34 +24,55 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="nav">
+        <div class="header">
             <h3>
                 ТОП ОБМЕННИКОВ
             </h3>
 
             <ul>
                 <li>
-                    BTC 30,347 $ <span> <img src="./images/ArrowUp.png" alt="arrow up" /></span>
+                    BTC 30,347 $
+                    <span> 
+                        <picture>
+                            <source media="(min-width: 320px) and (max-width: 720px)" srcset="./images/ArrowUpSmall.png"/>
+                            <img src="./images/ArrowUp.png" alt="arrow up" />
+                        </picture>
+                    </span>
+                    </li>
+                <li>
+                    ETH 2,060 $ 
+                    <picture>
+                        <source media="(min-width: 320px) and (max-width: 720px)" srcset="./images/ArrowUpSmall.png"/>
+                        <img src="./images/ArrowUp.png" alt="arrow up" />
+                    </picture>
+                    </li>
+                <li>
+                    USDT 0,499 $
+                    <picture>
+                        <source media="(min-width: 320px) and (max-width: 720px)" srcset="./images/ArrowDownSmall.png"/>
+                        <img src="./images/ArrowDown.png" alt="arrow down" />
+                    </picture>
                 </li>
                 <li>
-                    ETH 2,060 $ <span> <img src="./images/ArrowUp.png" alt="arrow up" /></span>
+                    BNB 331,23 $
+                    <picture>
+                        <source media="(min-width: 320px) and (max-width: 720px)" srcset="./images/ArrowUpSmall.png"/>
+                        <img src="./images/ArrowUp.png" alt="arrow up" />
+                    </picture>
                 </li>
                 <li>
-                    USDT 0,499 $ <span> <img src="./images/ArrowDown.png" alt="arrow up" /></span>
-                </li>
-                <li>
-                    BNB 331,23 $ <span> <img src="./images/ArrowUp.png" alt="arrow up" /></span>
-                </li>
-                <li>
-                    USDC 1,00 $ <span> <img src="./images/ArrowDown.png" alt="arrow up" /></span>
+                    USDC 1,00 $ 
+                    <picture>
+                        <source media="(min-width: 320px) and (max-width: 720px)" srcset="./images/ArrowDownSmall.png"/>
+                        <img src="./images/ArrowDown.png" alt="arrow down" />
+                    </picture>
                 </li>
             </ul>
-        </nav>
+        </div>
 
         <div class="banner">
             <picture>
-                <source media="(min-width: 320)" srcset="./images/banerSmall.png"/>
-                <source media="(min-width: 720)" srcset="./images/banerBig.png"/>
+                <source media="(min-width: 320px) and (max-width: 720px)" srcset="./images/banerSmall.png"/>
                 <img src="./images/banerBig.png" alt="ТОП ОБМЕННИКОВ"/>  
             </picture>
         </div>
@@ -213,13 +234,21 @@
                     </h4>
                 </div>
 
-                <div class="info-container__paragraph">
+                <div class="info-container__first-paragraph">
                     <p>
                         Обменники электронной валюты — это онлайн-сервисы, которые предоставляют 
                         возможность обменять платёжные системы, электронные деньги, криптовалюту 
                         и другие цифровые активы, например, перевести деньги Qiwi в Биткоин или вывести 
                         Bitcoin в рубли на СберБанк.
-                        <br> <br>
+                    </p>
+                </div>
+
+                <div class="info-container__img">
+                    <img src="./images/exchangeBig.png" alt="exchange big image" />
+                </div>
+
+                <div class="info-container__second-paragraph">
+                    <p>
                         На сегодняшний день существует множество различных электронных платёжных систем. 
                         Самыми популярными в России, Украине, Беларуси являются такие: Qiwi, Яндекс.Деньги,
                         Вебмани, Advcash, Perfect Money, Payeer, Skrill, PayPal, Neteller. Иногда возникает
@@ -227,10 +256,6 @@
                         Ethereum, Litecoin и другие можно купить или продать в электронных обменниках за
                         фиатные валюты (рубли, доллары, гривны, евро и т.д.).
                     </p>
-                </div>
-
-                <div class="info-container__img">
-                    <img src="./images/exchangeBig.png" alt="exchange big image" />
                 </div>
             </div>
             <div class="how-to-container">
@@ -321,7 +346,7 @@
                         </h6>
                     </div>
                     <div class="comments-button-container">
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <a href="#left-comment-form" >
                             оставить комментарий
                         </a>
                     </div>
@@ -477,7 +502,7 @@
                 </div>
                 
 
-                <form action="">
+                <form action="" onsubmit="SubmitForm()" name="commentForm" oninput="CheckInput()" id="left-comment-form">
                     <p class="second-headers">
                         Оцените данный обзор
                     </p>
@@ -496,10 +521,10 @@
                     </div>
                     <label for="fname" class="second-headers">Напишите ваше имя:</label>
                     <input type="text" id="fname" name="fname" required  />
-                    <label for="lcomment" class="second-headers">Напишите ваш комментарий:</label>
-                    <textarea id="fcomment" name="lname" required > </textarea>
+                    <label for="fcomment" class="second-headers">Напишите ваш комментарий:</label>
+                    <textarea id="fcomment" name="fcomment" required > </textarea>
 
-                    <button disabled>оставить комментарий</button>
+                    <button id="fbutton" >оставить комментарий</button>
                 </form>
             </div>
             <div class="policy-container">
@@ -532,10 +557,12 @@
             </h6>
         </div>
         <div class="footer-contents-container">
-            <div class="footer-content-container">
-                Здесь написана информация например: Топ обменников информационно — аналитический портал
+            <div class="footer-content-container footer-content__info">
+                <p>
+                    Здесь написана информация например: Топ обменников информационно — аналитический портал
+                </p>
             </div>
-            <div class="footer-content-container">
+            <div class="footer-content-container footer-content__links">
                 <a href="#">
                     Пользовательское соглашение
                 </a>
@@ -546,7 +573,7 @@
                     Отказ от ответственности
                 </a>
             </div>
-            <div class="footer-content-container">
+            <div class="footer-content-container footer-content__contacts">
                 <p>
                     Email: pochta@mail.com
                 </p>
@@ -567,5 +594,8 @@
             </p>
         </div>
     </footer>
+
+    <!-- Form controller -->
+    <script src="./js/FormControl.js" defer></script>
 </body>
 </html>
