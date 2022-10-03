@@ -4876,12 +4876,12 @@ header .banner picture img {
   .cards-section:first-child::before {
     content: '';
     width: 100vw;
-    height: 30vh;
+    height: 15rem;
     overflow-x: hidden;
     background-color: #FCFBFD;
     z-index: 1;
     position: absolute;
-    top: 37vh;
+    top: 25rem;
     left: 0;
   }
   .cards-section .card-container {
@@ -4950,7 +4950,7 @@ header .banner picture img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 4.7vh;
+    margin-bottom: 1rem;
     margin-left: 0vw;
     padding-top: 2rem;
   }
@@ -5030,9 +5030,10 @@ header .banner picture img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 1rem;
   }
   .cards-section .card-container .button-container a {
     margin-left: 1vw;
