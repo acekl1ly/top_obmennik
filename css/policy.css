@@ -189,7 +189,9 @@ section .card-container p {
   background-color: #FCFBFD;
 }
 
-.footer-container .footer__header, .footer-container .footer-contents-container, .footer-container .footer-policy {
+.footer-container .footer__header,
+.footer-container .footer-contents-container,
+.footer-container .footer-policy {
   width: 78vw;
   padding-left: 0vw;
 }
@@ -775,7 +777,9 @@ section .card-container p {
     margin-top: 0rem;
     background-color: #FCFBFD;
   }
-  .footer-container .footer__header, .footer-container .footer-contents-container, .footer-container .footer-policy {
+  .footer-container .footer__header,
+  .footer-container .footer-contents-container,
+  .footer-container .footer-policy {
     width: 88vw;
   }
   .footer-container .footer__header h6 {
@@ -1372,7 +1376,9 @@ section .card-container p {
     margin-top: 0rem;
     background-color: #FCFBFD;
   }
-  .footer-container .footer__header, .footer-container .footer-contents-container, .footer-container .footer-policy {
+  .footer-container .footer__header,
+  .footer-container .footer-contents-container,
+  .footer-container .footer-policy {
     width: 88vw;
   }
   .footer-container .footer__header h6 {

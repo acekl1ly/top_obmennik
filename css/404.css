@@ -186,7 +186,9 @@ main .error-container h2 {
   background-color: #FCFBFD;
 }
 
-.footer-container .footer__header, .footer-container .footer-contents-container, .footer-container .footer-policy {
+.footer-container .footer__header,
+.footer-container .footer-contents-container,
+.footer-container .footer-policy {
   width: 78vw;
   padding-left: 0vw;
 }
@@ -592,7 +594,9 @@ main .error-container h2 {
     margin-top: 0rem;
     background-color: #FCFBFD;
   }
-  .footer-container .footer__header, .footer-container .footer-contents-container, .footer-container .footer-policy {
+  .footer-container .footer__header,
+  .footer-container .footer-contents-container,
+  .footer-container .footer-policy {
     width: 88vw;
   }
   .footer-container .footer__header h6 {
@@ -1220,7 +1224,9 @@ main .error-container h2 {
     margin-top: 0rem;
     background-color: #FCFBFD;
   }
-  .footer-container .footer__header, .footer-container .footer-contents-container, .footer-container .footer-policy {
+  .footer-container .footer__header,
+  .footer-container .footer-contents-container,
+  .footer-container .footer-policy {
     width: 88vw;
   }
   .footer-container .footer__header h6 {
