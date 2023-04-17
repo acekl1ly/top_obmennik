@@ -10,7 +10,7 @@ let successText = document.getElementById('warning-success')
 
 // check form on submit
 function SubmitForm() {
-    // event.preventDefault()
+    event.preventDefault()
     // check if its filled
     if (
         star.value != '' && 
